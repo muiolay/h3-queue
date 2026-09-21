@@ -10,5 +10,5 @@ jobs:
       - name: run
         run: |
           echo "H3Q-CI-START $(date -u +%FT%T.%NZ) sha=$GITHUB_SHA event=$GITHUB_EVENT_NAME ref=$GITHUB_REF"
-          sleep 50
-          echo "H3Q-CI-DONE $(date -u +%FT%T.%NZ)"
+          sleep 45
+          bash ci/check.sh
